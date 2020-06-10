@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Practice Website</title>
+</head>
+<body>
+    <a href="JavaScript:void(0)" onlick="alert(calcTot(10.84));">Calculation</a>
+    <input type="button" value="Click" onclick="alert(calcTot(48.21));" onmouseover="this.style.color = 'green';">
+    <img src="picture_1.jpg" onMouseover="src='picture_2.jpg'" onmouseout="src='picture_1.jpg'">
+    <p id="loris" onmouseover="expand();">slow Loris: Mouse over for more info</p>
+    Email:<br>
+    <input type="text" size="30" onfocus="this.style.backgroundColor = 'yellow';" onblur="this.style.backgroundColor='white';">
+
+    <form onSubmit="checkAddress('email');">
+        Email:
+        <input type="text" id="email" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+        ZIP:<br />
+        <input type="text" id="zip" onblur="fillCity();" /><br />
+        City:<br />
+        <input type="text" id="city" />
+    </form>
+
+    <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>
+
+    <script>type = 'text/javascript'; src = 'C:/Users/User/JavaScript_Projects/js/for_loop_practice.js'</script>
+    <script>
+    function expandLoris() {
+        var expandedParagraph = "Slow lorises are a group of several species of trepsirrhine primates which \
+        make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of \
+        distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several \
+        adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time. \
+        Slow lorises have a toxic bite, a rare trait among mammals.";
+        document.getElementById("slowLoris").innerHTML = expandedParagraph;
+    }
+    </script>
+</body>
+</html>
