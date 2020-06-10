@@ -26,7 +26,7 @@ function calcTot(merchTot) {
 
 function checkAddress(fieldID) {
     if (document.getElementById(fieldId).value === "") {
-        alert ("email address required.")
+        alert("email address required.")
     }
 }
 
